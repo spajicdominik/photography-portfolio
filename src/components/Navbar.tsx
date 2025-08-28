@@ -17,8 +17,6 @@ function Navbar() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    
-
     return (
         <>
         <div className="w-full h-24 md:h-36 border-b border-[#B2B2B2] flex justify-between">
