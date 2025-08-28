@@ -1,8 +1,23 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import Dropdown from "./Dropdown";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 768){
+                setIsOpen(false);
+            }
+        }
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    
 
     return (
         <>
