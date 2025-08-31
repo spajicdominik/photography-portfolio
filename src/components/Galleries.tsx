@@ -1,10 +1,3 @@
-const images = [
-    'pic1.jpg',
-    'pic3.jpg',
-    'pic5.jpg',
-
-]
-
 function Galleries() {
     return(
         <div className="w-full flex items-center justify-center">

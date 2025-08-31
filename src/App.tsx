@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Preview from './components/Preview'
 import Description from './components/Description'
 import Galleries from './components/Galleries'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Preview></Preview>
       <Description></Description>
       <Galleries></Galleries>
+      <Footer></Footer>
     </>
   )
 }
