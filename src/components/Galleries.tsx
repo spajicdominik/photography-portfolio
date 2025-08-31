@@ -1,7 +1,7 @@
 function Galleries() {
     return(
-        <div className="w-full flex items-center justify-center mb-4">
-            <div className="flex flex-col w-5/6 border-b border-[#B2B2B2] justify-center">
+        <div className="w-full flex items-center justify-center">
+            <div className="flex flex-col w-5/6  justify-center mb-4">
                 <div className="my-5 flex items-center justify-center">
                     <h1 className="text-xl font-[Italiana] text-black font-medium">IMAGE GALLERIES</h1>
                 </div>
