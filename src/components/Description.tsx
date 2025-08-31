@@ -2,7 +2,7 @@ function Description(){
     return (
         <div className="w-full flex items-center justify-center">
             <div className="mt-8 flex w-5/6 border-b border-[#B2B2B2]">
-               <div className="mr-5 flex flex-col">
+               <div className="mr-5 flex flex-col max-md:items-center">
                     <h1 className="mb-5 text-lg lg:text-2xl xl:text-4xl font-[Italiana] text-black font-black">“Ovdje ce ici neki tvoj originalan citat o fotografiji, ili nesto sto ti osjecas, nesto inspirativno”</h1>
                     <p className="mb-5 text-md lg:text-xl xl:text-2xl font-[Italiana] text-black">Ovdje cemo isto staviti neki poduzi tekst gdje cemo napisati ukratko tko 
                         si ti, sta radis inace, odakle dolazis i tako dalje. U biti ovdje ce biti kao 
