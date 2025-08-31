@@ -2,8 +2,8 @@ import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="w-full bg-black flex flex-col items-center">
-      <div className="flex justify-between w-1/3 mt-4">
+    <div className="w-full bg-black flex flex-col items-center pt-8 mt-4">
+      <div className="flex justify-between w-48 mt-4">
         <a
           href="https://instagram.com"
           className="text-white hover:text-white"
