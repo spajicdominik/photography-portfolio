@@ -20,7 +20,7 @@ function Footer() {
         <motion.a
           whileHover={{scale: 1.2}}
           whileTap={{scale:0.9}}
-          href="https://facebook.com"
+          href="https://www.facebook.com/andrea.petrisevac.5"
           className="text-white hover:text-white"
         >
           <FaFacebook size={32}/>

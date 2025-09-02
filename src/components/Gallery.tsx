@@ -2,11 +2,23 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function Gallery() {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex justify-center my-6 lg:my-20">
+    <div className="flex flex-col justify-center items-center mb-12 lg:mb-24">
+      <motion.div className="flex justify-center my-6 lg:my-14"
+      initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0, 0.71, 0.2, 1.01],
+                        }}>
         <h1 className="text-xl lg:text-4xl font-[Italiana] text-black font-extrabold">PORTFOLIO GALLERIES</h1>
-      </div>
-      <div className="w-5/6 grid max-sm:grid-cols-1 md:grid-cols-2 mt-4">
+      </motion.div>
+      <motion.div className="w-5/6 grid max-sm:grid-cols-1 md:grid-cols-2 mt-4"
+      initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0, 0.71, 0.2, 1.01],
+                        }}>
         <div className="w-full relative">
           <img
             src="pic1.jpg"
@@ -72,7 +84,7 @@ function Gallery() {
             </p>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
