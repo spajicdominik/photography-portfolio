@@ -16,9 +16,14 @@ function Preview() {
             {images.map((src, index) => (
                 <AnimatePresence>
                 <motion.div
-                    initial={{opacity: 0, y:-30}}
-                    animate={{opacity: 1, y:0}}
-                    transition={{ duration: 2 }} 
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 1.5,
+                        delay: 0.5,
+                        ease: [0, 0.71, 0.2, 1.01],
+                        }}
+ 
                     key={index} className="mb-4 break-inside-avoid">
                     <motion.img
                         whileHover={{scale:1.02}} 

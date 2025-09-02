@@ -41,7 +41,7 @@ function Footer() {
             <p className="text-xs " onClick={() => navigate("/")}>HOME</p>
         </div>
         <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs" onClick={() => navigate("/portfolio")}>PORTFOLIO</p>
+            <p className="text-xs" onClick={() => navigate("/galleries")}>GALLERIES</p>
         </div>
         <div className="mr-3 flex items-center justify-center cursor-pointer">
             <p className="text-xs" onClick={() => navigate("/about")}>ABOUT</p>
@@ -50,7 +50,7 @@ function Footer() {
             <p className="text-xs" onClick={() => navigate("/contact")}>CONTACT</p>
         </div>
         <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs" onClick={() => navigate("/galleries")}>GALLERIES</p>
+            <p className="text-xs" onClick={() => navigate("/journal")}>JOURNAL</p>
         </div>
       </div>
 

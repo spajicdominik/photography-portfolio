@@ -20,7 +20,7 @@ function App() {
         <Footer></Footer>
       </>}></Route>
 
-      <Route path='/portfolio' element={<>
+      <Route path='/journal' element={<>
       <Navbar></Navbar>
       <Footer></Footer>
       </>}></Route>

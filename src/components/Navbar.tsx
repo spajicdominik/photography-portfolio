@@ -22,7 +22,14 @@ function Navbar() {
 
     return (
         <>
-        <div className="w-full h-24 md:h-36 border-b border-[#B2B2B2] flex justify-between">
+        <motion.div className="w-full h-24 md:h-36 border-b border-[#B2B2B2] flex justify-between"
+        initial={{ opacity: 0}}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        duration: 1.5,
+                        delay: 0.5,
+                        ease: [0, 0.71, 0.2, 1.01],
+                        }}>
             <div className="bg-[#232323] w-24 sm:w-32 md:w-48 h-full flex items-center justify-center" >
                 <motion.img
                 whileHover={{scale: 1.2}}
@@ -41,7 +48,7 @@ function Navbar() {
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}}
                     className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
-                    onClick={() => navigate("/portfolio")}>PORTFOLIO</motion.div>
+                    onClick={() => navigate("/galleries")}>GALLERIES</motion.div>
                 <motion.div
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}} 
@@ -56,13 +63,13 @@ function Navbar() {
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}} 
                     className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
-                    onClick={() => navigate("/galleries")}>GALLERIES</motion.div>
+                    onClick={() => navigate("/journal")}>JOURNAL</motion.div>
             </div>
             
             <motion.svg whileHover={{scale: 1.2}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" className="md:hidden size-8 m-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                 <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
             </motion.svg>
-        </div>
+        </motion.div>
         <AnimatePresence>
         {isOpen && (
             <motion.div

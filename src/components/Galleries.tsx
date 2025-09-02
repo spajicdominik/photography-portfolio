@@ -5,7 +5,7 @@ function Galleries() {
         <motion.div
             initial={{ opacity: 0, y:60}}
             whileInView={{ opacity: 1, y:0}}
-            transition={{ duration: 2 }} 
+            transition={{ duration: 1.5 }} 
             className="w-full flex items-center justify-center">
             <div className="flex flex-col w-5/6  justify-center mb-4">
                 <div className="my-5 xl:my-10 flex items-center justify-center">

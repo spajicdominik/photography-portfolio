@@ -5,7 +5,7 @@ function Description(){
         <motion.div 
             initial={{ opacity: 0, y:30}}
             whileInView={{ opacity: 1, y:0}}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
             className="w-full flex items-center justify-center">
             <div className="mt-8 flex w-5/6 border-b border-[#B2B2B2]">
                <div className="mr-5 flex flex-col max-md:items-center">
