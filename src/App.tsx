@@ -5,6 +5,7 @@ import Preview from './components/Preview'
 import Description from './components/Description'
 import Galleries from './components/Galleries'
 import Footer from './components/Footer'
+import Gallery from './components/Gallery'
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
       <Route path='/galleries' element={<>
       <Navbar></Navbar>
+      <Gallery></Gallery>
       <Footer></Footer>
       </>}></Route>   
 
