@@ -70,7 +70,7 @@ function Gallery() {
 
         <div className="w-full relative">
           <img
-            src="pic2.jpg"
+            src="pic12.jpg"
             alt=""
             className="h-64 xl:h-84 2xl:h-100 w-full object-cover"
           />

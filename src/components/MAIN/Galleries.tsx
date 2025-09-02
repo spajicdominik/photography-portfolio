@@ -42,7 +42,7 @@ function Galleries() {
                         </div>
 
                         <div className="w-full relative">
-                            <img src="pic2.jpg" alt="" className="h-64 xl:h-84 2xl:h-100 w-full object-cover"/>
+                            <img src="pic12.jpg" alt="" className="h-64 xl:h-84 2xl:h-100 w-full object-cover"/>
                             <motion.div
                                 whileHover={{scale: 1.2}}
                                 whileTap={{scale:0.9}} 

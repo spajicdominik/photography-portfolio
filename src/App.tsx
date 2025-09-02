@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Gallery from './components/GALLERIES/Gallery'
 import { Routes, Route } from "react-router-dom";
 import About from './components/ABOUT/About'
+import Contact from './components/CONTACT/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +36,7 @@ function App() {
 
       <Route path='/contact' element={<>
       <Navbar></Navbar>
+      <Contact></Contact>
       <Footer></Footer>
       </>}></Route>
 
