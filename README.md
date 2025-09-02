@@ -5,3 +5,11 @@ a categorized gallery.
 
 ## 📸 Screenshots
 ![Homepage Screenshot](public/homepage.png)
+
+## ⚙️ Installation
+1. . Clone the repo
+   ```bash
+   git clone https://github.com/spajicdominik/photography-portfolio.git
+
+2. Navigate into the project folder
+    cd photography-portfolio
