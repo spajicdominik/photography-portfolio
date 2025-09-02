@@ -27,7 +27,7 @@ function Navbar() {
                     animate={{ opacity: 1 }}
                     transition={{
                         duration: 1.5,
-                        delay: 0.5,
+                        delay: 0.2,
                         ease: [0, 0.71, 0.2, 1.01],
                         }}>
             <div className="bg-[#232323] w-24 sm:w-32 md:w-48 h-full flex items-center justify-center" >
@@ -71,17 +71,8 @@ function Navbar() {
             </motion.svg>
         </motion.div>
         <AnimatePresence>
-        {isOpen && (
-            <motion.div
-            initial={{ opacity: 0, y: 0 }}  
-            animate={{ opacity: 1, y: 0 }}   
-            exit={{ opacity: 0, y: 0 }}    
-            transition={{ duration: 0.3 }}    
-            >
-                <Dropdown></Dropdown>
-            </motion.div>
-        )}
-        </AnimatePresence>
+  {isOpen && <Dropdown />}
+</AnimatePresence>
     </>
     )
 }
