@@ -18,18 +18,18 @@ a categorized gallery.
 
 2. Navigate into the project folder
 
-```bash
-    cd photography-portfolio
-```
+    ```bash
+        cd photography-portfolio
+    ```
 
 3. Install dependencies
 
-```bash
-    npm install
-```
+    ```bash
+        npm install
+    ```
 
 4. Run the project
 
-```bash
-npm run dev
-```
+    ```bash
+       npm run dev
+    ```
