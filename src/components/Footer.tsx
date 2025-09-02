@@ -1,15 +1,17 @@
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import {motion, AnimatePresence} from "framer-motion"
-
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-black flex flex-col items-center pt-8 mt-4">
       <div className="flex justify-between w-48 mt-4">
         <motion.a
           whileHover={{scale: 1.2}}
           whileTap={{scale:0.9}}
-          href="https://instagram.com"
+          href="https://www.instagram.com/andreapetrisevac/"
           className="text-white hover:text-white"
         >
           <FaInstagram size={32}/>
@@ -36,19 +38,19 @@ function Footer() {
 
       <div className="flex justify-between mt-6">
         <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs ">HOME</p>
+            <p className="text-xs " onClick={() => navigate("/")}>HOME</p>
         </div>
         <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs">PORTFOLIO</p>
+            <p className="text-xs" onClick={() => navigate("/portfolio")}>PORTFOLIO</p>
         </div>
         <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs">ABOUT</p>
+            <p className="text-xs" onClick={() => navigate("/about")}>ABOUT</p>
         </div>
         <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs">CONTACT</p>
+            <p className="text-xs" onClick={() => navigate("/contact")}>CONTACT</p>
         </div>
         <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs">GALLERIES</p>
+            <p className="text-xs" onClick={() => navigate("/galleries")}>GALLERIES</p>
         </div>
       </div>
 

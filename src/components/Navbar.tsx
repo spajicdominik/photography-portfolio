@@ -2,9 +2,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Dropdown from "./Dropdown";
 import {motion, AnimatePresence} from "framer-motion"
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleResize = () => {
@@ -25,30 +27,36 @@ function Navbar() {
                 <motion.img
                 whileHover={{scale: 1.2}}
                 whileTap={{scale:0.9}}
-                src="src/assets/logo.png" alt="" className="w-2/3 cursor-pointer"/>
+                src="src/assets/logo.png" alt="" className="w-2/3 cursor-pointer"
+                onClick={() => navigate("/")}/>
             </div>
 
             <div className="max-md:hidden md:flex justify-evenly mr-5">
                 <motion.div
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}}
-                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer">HOME</motion.div>
+                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
+                    onClick={() => navigate("/")}>HOME</motion.div>
                 <motion.div 
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}}
-                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer">PORTFOLIO</motion.div>
+                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
+                    onClick={() => navigate("/portfolio")}>PORTFOLIO</motion.div>
                 <motion.div
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}} 
-                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer">ABOUT</motion.div>
+                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
+                    onClick={() => navigate("/about")}>ABOUT</motion.div>
                 <motion.div
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}} 
-                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer">CONTACT</motion.div>
+                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
+                    onClick={() => navigate("/contact")}>CONTACT</motion.div>
                 <motion.div
                     whileHover={{scale: 1.2}}
                     whileTap={{scale:0.9}} 
-                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer">GALLERIES</motion.div>
+                    className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
+                    onClick={() => navigate("/galleries")}>GALLERIES</motion.div>
             </div>
             
             <motion.svg whileHover={{scale: 1.2}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" className="md:hidden size-8 m-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>

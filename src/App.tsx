@@ -11,13 +11,36 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <Routes>
+      <Route path='/' element={<>
+        <Navbar></Navbar>
+        <Preview></Preview>
+        <Description></Description>
+        <Galleries></Galleries>
+        <Footer></Footer>
+      </>}></Route>
+
+      <Route path='/portfolio' element={<>
       <Navbar></Navbar>
-      <Preview></Preview>
-      <Description></Description>
-      <Galleries></Galleries>
       <Footer></Footer>
-    </>
+      </>}></Route>
+
+     <Route path='/about' element={<>
+      <Navbar></Navbar>
+      <Footer></Footer>
+      </>}></Route>
+
+      <Route path='/contact' element={<>
+      <Navbar></Navbar>
+      <Footer></Footer>
+      </>}></Route>
+
+      <Route path='/galleries' element={<>
+      <Navbar></Navbar>
+      <Footer></Footer>
+      </>}></Route>   
+
+    </Routes>
   )
 }
 
