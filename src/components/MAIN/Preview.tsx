@@ -6,8 +6,7 @@ const images = [
     'pic9.jpg',
     'pic10.jpg',
     'pic11.jpg',
-    'pic12.jpg',
-    'pic13.JPG'
+    'pic12.jpg'
 ]
 
 function Preview() {
