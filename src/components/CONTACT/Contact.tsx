@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mb-6">
       <motion.div
         className="w-full relative"
         initial={{ opacity: 0, y: 30 }}
