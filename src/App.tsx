@@ -11,7 +11,6 @@ import About from './components/ABOUT/About'
 import Contact from './components/CONTACT/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Routes>
