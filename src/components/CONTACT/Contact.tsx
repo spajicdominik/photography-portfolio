@@ -23,8 +23,8 @@ function Contact() {
         </div>
       </motion.div>
 
-      <div className="w-5/6 flex-col md:flex items-center justify-center">
-        <div className="">
+      <div className="w-5/6 max-md:flex-col lg:flex items-center justify-center">
+        <div className="lg:pb-100">
           <h1 className="text-4xl font-[Italiana] text-black font-extrabold mt-4 mb-10">
             Contact Me
           </h1>
@@ -67,21 +67,21 @@ function Contact() {
           </div>
         </div>
 
-        <div className="flex flex-col mt-10">
-            <p className="text-xl font-[Italiana] text-black font-medium">Your name (required)</p>
-            <input type="text "  className="bg-white text-black w-5/6 h-14"/>
+        <form className="flex flex-col mt-10 md:w-2/3">
+            <p className="text-xl font-[Italiana] text-black font-medium mb-2">Your name (required)</p>
+            <input type="text "  className="bg-white text-black w-5/6 h-14 border p-3"/>
 
-            <p className="text-xl font-[Italiana] text-black font-medium">Your Email (required)</p>
-            <input type="text "  className="bg-white text-black w-5/6 h-14"/>
+            <p className="text-xl font-[Italiana] text-black font-medium mb-2 mt-4">Your Email (required)</p>
+            <input type="text "  className="bg-white text-black w-5/6 h-14 border p-3"/>
 
-            <p className="text-xl font-[Italiana] text-black font-medium">Subject</p>
-            <input type="text "  className="bg-white text-black w-5/6 h-14"/>
+            <p className="text-xl font-[Italiana] text-black font-medium mb-2 mt-4">Subject</p>
+            <input type="text "  className="bg-white text-black w-5/6 h-14 border p-3"/>
 
-            <p className="text-xl font-[Italiana] text-black font-medium">Your message</p>
-            <input type="text "  className="bg-white text-black w-5/6 h-72"/>
+            <p className="text-xl font-[Italiana] text-black font-medium mb-2 mt-4">Your message</p>
+            <textarea className="bg-white text-black w-5/6 h-72 border align-text-top p-3"/>
 
-            <button className="w-32 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Submit</button>
-        </div>
+            <button className="w-32 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-5">Submit</button>
+        </form>
         <div></div>
       </div>
     </div>
