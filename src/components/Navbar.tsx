@@ -40,7 +40,7 @@ function Navbar() {
           <motion.img
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-            src="src/assets/logo.png"
+            src="logo.png"
             alt=""
             className="w-2/3 cursor-pointer"
             onClick={() => navigate("/")}
