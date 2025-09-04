@@ -69,18 +69,18 @@ function Contact() {
 
         <form className="flex flex-col mt-10 md:w-2/3">
             <p className="text-xl font-[Italiana] text-black font-medium mb-2">Your name (required)</p>
-            <input type="text "  className="bg-white text-black w-5/6 h-14 border p-3"/>
+            <input type="text "  className="font-[Italiana] text-lg bg-white text-black w-5/6 h-14 border p-3"/>
 
             <p className="text-xl font-[Italiana] text-black font-medium mb-2 mt-4">Your Email (required)</p>
-            <input type="text "  className="bg-white text-black w-5/6 h-14 border p-3"/>
+            <input type="text "  className="font-[Italiana] text-lg bg-white text-black w-5/6 h-14 border p-3"/>
 
             <p className="text-xl font-[Italiana] text-black font-medium mb-2 mt-4">Subject</p>
-            <input type="text "  className="bg-white text-black w-5/6 h-14 border p-3"/>
+            <input type="text "  className="font-[Italiana] text-lg bg-white text-black w-5/6 h-14 border p-3"/>
 
             <p className="text-xl font-[Italiana] text-black font-medium mb-2 mt-4">Your message</p>
-            <textarea className="bg-white text-black w-5/6 h-72 border align-text-top p-3"/>
+            <textarea className="font-[Italiana] text-lg bg-white text-black w-5/6 h-72 border align-text-top p-3"/>
 
-            <button className="w-32 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-5">Submit</button>
+            <button className="cursor-pointer w-32 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-5">Submit</button>
         </form>
         <div></div>
       </div>
