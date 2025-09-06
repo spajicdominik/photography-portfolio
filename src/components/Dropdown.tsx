@@ -45,14 +45,6 @@ export default function Dropdown() {
         >
           CONTACT
         </motion.li>
-        <motion.li
-          onClick={() => navigate("/journal")}
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.9 }}
-          className="font-[Italiana] text-black cursor-pointer border-b border-[#B2B2B2]"
-        >
-          JOURNAL
-        </motion.li>
       </ul>
     </motion.div>
   );

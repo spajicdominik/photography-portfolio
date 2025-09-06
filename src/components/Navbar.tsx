@@ -80,14 +80,6 @@ function Navbar() {
           >
             CONTACT
           </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            className="font-[Italiana] text-black text-xl w-28 flex items-center justify-center cursor-pointer"
-            onClick={() => navigate("/journal")}
-          >
-            JOURNAL
-          </motion.div>
         </div>
 
         <motion.svg

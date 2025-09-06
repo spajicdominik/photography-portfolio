@@ -49,9 +49,6 @@ function Footer() {
         <div className="mr-3 flex items-center justify-center cursor-pointer">
             <p className="text-xs" onClick={() => navigate("/contact")}>CONTACT</p>
         </div>
-        <div className="mr-3 flex items-center justify-center cursor-pointer">
-            <p className="text-xs" onClick={() => navigate("/journal")}>JOURNAL</p>
-        </div>
       </div>
 
       <div className="flex justify-between mt-6 mb-8">
